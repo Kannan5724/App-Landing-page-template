@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.section1{
+    background-image: url(Images/bgimg2.jpeg);
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+@media(max-width:677px){
+    :is(.section1,.section3,.section4){
+        height: 732px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.contents{
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+}
+.contents h1{
+    margin-top: 100px;
+}
+.contents h1,h3,p,nav,.btn1{
+    margin-bottom: 20px;
+}
+nav{
+   display: inline-block; 
+   transform: skew(-15deg);
+}
+nav a{
+    background-color: rgba(0,0,0,0.5);
+    display: block;
+    float: left;
+    padding: 10px 5px;
+    text-decoration: none;
+    color: white;
+    border-right: 1px solid grey;
+}
+nav a:hover{
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+    transition-duration: 0.5s;
+}
+.btn1 button{
+    padding: 10px 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.btn1 button:hover{
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    transition-duration: 0.5s;
+    border: none;
+}
+.section2 {
+    display: flex;
+    flex-direction: column;
+    background-image: url(Images/texture\ bg.avif);
+    color: white;
+}
+.heading h3{
+    text-align: center;
+    margin-top: 30px;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box1,.box2,.box3,.box4{
+    width: 300px;
+    text-align: center;
+    border: 10px solid grey;
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+:is(.box1,.box2,.box3,.box4):hover{
+    background-color: rgba(9, 198, 245, 0.5);
+    transition-duration: 0.5s;
+    border: 1px solid grey;
+    transform: scale(1.1,1.1);
+}
+.section3{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom right,#000000,#454545,#999999);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+}
+@keyframes gradient {
+    0%{background-position: 0%;}
+    50%{background-position: 100%;}
+    100%{background-position: 0%}
+}
+.content2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+    margin: 50px;
+    color: white;
+}
+.content2 button{
+    width: 150px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.content2 button:hover{
+    background-color: rgba(0,0,0,.5);
+    color: white;
+    transition-duration: 0.5s;
+    border: none;
+}
+.section4{
+    display: flex;
+    justify-content: center;
+    background-image: url(Images/texture\ bg.avif);
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    color: white;
+    margin: 50px;
+}
+.details p i{
+    margin-right: 5px;
+}
+:is(.name,.mail) input{
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+}
+.details #send{
+    padding: 10px;
+    width: 100px;
+    background-color: rgba(255,255,255,0.3);
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.sites{
+    margin-top: 20px;
+}
+.sites button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0px 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#fb{
+    background-color: blue;
+}
+#twt{
+    background-color: aqua;
+}
+#yt{
+    background-color: red;
+}
+#ig{
+    background-color: rgb(202, 124, 35);
+}
+.sites button i{
+    font-size: 30px;
+}
+footer{
+    text-align: center;
+    height: 20px;
+}
